@@ -3,8 +3,8 @@ import 'package:new_project/core/customButton.dart';
 import 'package:new_project/core/custom_container.dart';
 import 'package:new_project/core/custom_text_field.dart';
 import 'package:new_project/core/styles.dart';
-import 'package:new_project/features/HomePage/Presentation/Views/bmi_result.dart';
-import 'package:new_project/features/HomePage/Presentation/Widgets/image_container.dart';
+import 'package:new_project/features/BMI_calculations/Presentation/UIscreens/bmi_result.dart';
+import 'package:new_project/features/BMI_calculations/Presentation/Widgets/image_container.dart';
 
 class BMIPage extends StatefulWidget {
   const BMIPage({super.key});

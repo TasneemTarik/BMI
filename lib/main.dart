@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:new_project/features/HomePage/Presentation/Views/bmi.dart';
+import 'package:new_project/features/BMI_calculations/Presentation/UIscreens/bmi.dart';
 
 import 'core/styles.dart';
-import 'features/HomePage/Presentation/Views/bmi_result.dart';
-import 'features/HomePage/Presentation/Views/home_page.dart';
+import 'features/BMI_calculations/Presentation/UIscreens/bmi_result.dart';
+import 'features/BMI_calculations/Presentation/UIscreens/home_page.dart';
 
 void main() {
   runApp(const FLutterApp());
@@ -20,7 +20,6 @@ class FLutterApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         '/home': (context) => HomePage(),
-
         '/bmi': (context) => BMIPage(),
         '/bmi_result': (context) => BmiResult(),
       },

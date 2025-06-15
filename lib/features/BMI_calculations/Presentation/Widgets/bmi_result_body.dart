@@ -128,7 +128,12 @@ class BMIResultBody extends StatelessWidget {
           ),
           SizedBox(height: 20), // or any height you want for spacing
 
-          CustomElevatedButton(onpressed: () {}, text: 'Calculate BMI Again'),
+          CustomElevatedButton(
+            onpressed: () {
+              Navigator.of(context).pop();
+            },
+            text: 'Calculate BMI Again',
+          ),
           SizedBox(height: 15),
         ],
       ),

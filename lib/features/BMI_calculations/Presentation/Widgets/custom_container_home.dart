@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:new_project/core/customButton.dart';
 import 'package:new_project/core/styles.dart';
-import 'package:new_project/features/HomePage/Presentation/Views/bmi.dart';
+import 'package:new_project/features/BMI_calculations/Presentation/UIscreens/bmi.dart';
 
 class CustomContainerHome extends StatelessWidget {
   const CustomContainerHome({
