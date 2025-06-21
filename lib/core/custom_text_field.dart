@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class CustomTextField extends StatelessWidget {
-  CustomTextField({super.key,required this.controller,required this.keyboardType});
+  CustomTextField({super.key,required this.controller,required this.keyboardType,required this.validate,this.submitted});
   TextEditingController? controller = TextEditingController();
+  String? Function(String?)? validate;
+  void Function(String)? submitted;
   TextInputType? keyboardType;
   @override
   Widget build(BuildContext context) {
-    return TextFormField(keyboardType: keyboardType,
-      controller: controller,
+    return TextFormField(keyboardType: keyboardType,onFieldSubmitted:submitted ,
+      controller: controller,validator: validate,
       textAlign: TextAlign.justify,
       decoration: InputDecoration(
         focusedBorder: OutlineInputBorder(

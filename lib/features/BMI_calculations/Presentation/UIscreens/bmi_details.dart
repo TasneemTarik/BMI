@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../Widgets/bmi_result_body.dart';
+import '../Widgets/bmi_details_body.dart';
 
 class BmiResult extends StatelessWidget {
   const BmiResult({super.key});

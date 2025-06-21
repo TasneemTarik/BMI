@@ -1,20 +1,23 @@
 import 'package:flutter/material.dart';
 
-class CustomContainer extends StatelessWidget {
-  CustomContainer({
+class weightorheight_text_field extends StatelessWidget {
+  weightorheight_text_field({
     super.key,
     this.onpressedminus,
     this.onpressedplus,
     required this.controller,
+    required this.validate,
   });
   void Function()? onpressedminus;
   void Function()? onpressedplus;
+  String? Function(String?)? validate;
   TextEditingController controller = TextEditingController();
 
   // String text;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      validator: validate,
       decoration: InputDecoration(
         prefixIcon: IconButton(
           onPressed: onpressedminus,

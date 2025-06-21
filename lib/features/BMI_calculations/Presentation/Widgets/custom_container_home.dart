@@ -15,7 +15,7 @@ class CustomContainerHome extends StatelessWidget {
       width: double.infinity,
       height: MediaQuery.of(context).size.height * .6,
       decoration: BoxDecoration(
-        color: Color(0xff7876CD),
+        color: Color(0xff7c83AD),
         borderRadius: BorderRadius.circular(25),
       ),
     
